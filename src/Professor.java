@@ -22,6 +22,17 @@ public class Professor {
 	private float salario;
 	
 	/**<br>Agora, a classe terá os seguintes métodos:*/
+	public void Professor(String nome, String senha, String cpf, String disciplinas, String dataNascimento, String endereco, 
+			String telefone, float salario) {
+		setNome(nome);
+		setSenha(senha);
+		setCpf(cpf);
+		setDisciplinas(disciplinas);
+		setDataNascimento(dataNascimento);
+		setEndereco(endereco);
+		setTelefone(telefone);
+		setSalario(salario);
+	}
 	/**<br>Método para retornar o nome do professor;*/
 	public String getNome() {
 		return nome;

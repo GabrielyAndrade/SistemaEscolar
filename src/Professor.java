@@ -22,6 +22,7 @@ public class Professor {
 	private float salario;
 	
 	/**<br>Agora, a classe terá os seguintes métodos:*/
+	/**<br>Esse método é um método construtor da classe Professor.*/
 	public void Professor(String nome, String senha, String cpf, String disciplinas, String dataNascimento, String endereco, 
 			String telefone, float salario) {
 		setNome(nome);

@@ -3,6 +3,7 @@ public class Administrador {
 	/**<br>Os seguintes dados serao de login: */
 	private String usuario = "admin";
 	private String senha = "admin";
+	private Professor professor = new Professor();
 	
 	/**<br>Funcao para retornar o usuario do Administrador.*/
 	public String getUsuario() {

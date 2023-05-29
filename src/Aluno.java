@@ -1,4 +1,5 @@
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 /**Criacao da classe aluno onde irá ser inserido os dados abaixo:<br>*/
 public class Aluno {
@@ -17,6 +18,10 @@ public class Aluno {
     private String responsavel;
     /**<br>Telefone do Responsável:*/
     private String telefone_responsavel;
+    /**<br>Curso do aluno*/
+    private Curso curso;
+    /**<br>Cursos do aluno*/
+    private ArrayList<Curso> cursos = new ArrayList<Curso>(); 
     
     /**<br> Agora a classe tera os seguintes metodos:*/
     /**<br> Metodo Construtor*/
@@ -139,5 +144,20 @@ public class Aluno {
         }else{
             return("Digite um telefone no formato abaixo:\n 47912345678 (DDD 9 12345678)");
         }
+	}
+	
+	/**<br>Metodo para definir o curso*/
+	public void setCurso(Curso curso) {
+		cursos.add(curso);
+	}
+	
+	/**<br>Metodo para retornar curso especifico*/
+	public Curso getCursoEspecifico(int i) {
+		return cursos.get(i);
+	}
+	
+	/**<br>Metodo para retornar os cursos*/
+	public ArrayList<Curso> getCursos() {
+		return cursos;
 	}
 }

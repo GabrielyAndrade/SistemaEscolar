@@ -1,4 +1,5 @@
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Calendar;
 
 import javax.swing.JOptionPane;
@@ -10,8 +11,10 @@ public class Professor {
 	private String senha;
 	/**<br>CPF do professor;*/
 	private String cpf;
-	/**<br>Disciplinas do professor;*/
-	private String disciplinas;
+	/**<br>Cursos do professor;*/
+	private Curso curso;
+	/**<br>Lista de cursos do professor.*/
+	private ArrayList<Curso> cursos = new ArrayList<Curso>();
 	/**<br>Data de nascimento do professor;*/
 	private Calendar dataNascimento;
 	/**<br>Endereco do professor;*/
@@ -21,14 +24,15 @@ public class Professor {
 	/**<br>Salario do professor;*/
 	private float salario;
 	
+	
 	/**<br>Agora, a classe terá os seguintes Metodos:*/
 	/**<br>Esse Metodo é um Metodo construtor da classe Professor.*/
-	public void Professor(String nome, String senha, String cpf, String disciplinas, String dataNascimento, String endereco, 
+	public void Professor(String nome, String senha, String cpf, Curso curso, String dataNascimento, String endereco, 
 			String telefone, float salario) {
 		setNome(nome);
 		setSenha(senha);
 		setCpf(cpf);
-		setDisciplinas(disciplinas);
+		setCurso(curso);
 		setDataNascimento(dataNascimento);
 		setEndereco(endereco);
 		setTelefone(telefone);
@@ -82,14 +86,19 @@ public class Professor {
 		}
 	}
 	
-	/**<br>Metodo para retornar as disciplinas do professor;*/
-	public String getDisciplinas() {
-		return disciplinas;
+	/**<br>Metodo para retornar o curso do professor;*/
+	public Curso getCursoEspecifico(int i) {
+		return cursos.get(i);
+	}
+	
+	//*<br>Metodo para retornar os cursos do professor*/
+	public ArrayList<Curso> getCursos() {
+		return cursos;
 	}
 	
 	/**<br>Metodo para definir as disciplinas do professor;*/
-	public void setDisciplinas(String disciplinas) {
-		this.disciplinas = disciplinas;
+	public void setCurso (Curso curso) {
+		cursos.add(curso);
 	}
 	
 	/**<br>Metodo para retornar a data de nascimento do professor;*/

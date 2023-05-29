@@ -13,6 +13,17 @@ public class Curso {
 	/**<br>Professor do curso*/
 	private Professor professor;
 	
+	/**<br>Agora, a classe tera os seguintes metodos:*/
+	/**<br>Metodo construtor*/
+	public void Curso(String nome, int duracao) {
+		this.nome = nome;
+		this.duracao = duracao;
+	}
+	
+	/**Metodo sobrecarga*/
+	public void Curso(String nome) {
+		this.nome = nome;
+	}
 	/**<br>Definir o nome do curso*/
 	public void setNome(String nome) {
 		if(!nome.isEmpty()) {

@@ -34,6 +34,12 @@ public class Aluno {
     	this.setResponsavel(responsavel);
     	this.setTelefone_responsavel(telefone_responsavel);
     }
+    /**<br> Metodo Sobrecarga*/    
+    public Aluno() {
+    	this.setNome(nome);
+    	this.setEndereco(endereco);
+    	this.setResponsavel(responsavel);
+    }
     /**<br> Metodo para alterar/definir o Nome do Aluno:*/ 
     public void setNome(String nome1){
         if(nome1.length()>0) 

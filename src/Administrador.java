@@ -1,15 +1,15 @@
-/**Criação da classe Administrador que terá a permissão para registrar professores e alunos.*/
+/**Criacao da classe Administrador que tera a permissao para registrar professores e alunos.*/
 public class Administrador {
-	/**<br>Os seguintes dados serão de login: */
+	/**<br>Os seguintes dados serao de login: */
 	private String usuario = "admin";
 	private String senha = "admin";
 	
-	/**<br>Função para retornar o usuário do Administrador.*/
+	/**<br>Funcao para retornar o usuario do Administrador.*/
 	public String getUsuario() {
 		return usuario;
 	}
 	
-	/**<br>Função para retornar a senha do usuário Administrador.*/
+	/**<br>Funcao para retornar a senha do usuario Administrador.*/
 	public String getSenha() {
 		return senha;
 	}

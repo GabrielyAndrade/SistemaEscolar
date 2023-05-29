@@ -2,7 +2,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 import javax.swing.JOptionPane;
-/**Criação da classe professor onde iremos inserir os dados. <br>*/
+/**Criacao da classe professor onde iremos inserir os dados. <br>*/
 public class Professor {
 	/**Aqui iremos inserir os seguintes dados do professor:<br> Nome do professor;*/
 	private String nome;
@@ -14,15 +14,15 @@ public class Professor {
 	private String disciplinas;
 	/**<br>Data de nascimento do professor;*/
 	private Calendar dataNascimento;
-	/**<br>Endereço do professor;*/
+	/**<br>Endereco do professor;*/
 	private String endereco;
 	/**<br>Telefone do professor;*/
 	private String telefone;
-	/**<br>Salário do professor;*/
+	/**<br>Salario do professor;*/
 	private float salario;
 	
-	/**<br>Agora, a classe terá os seguintes métodos:*/
-	/**<br>Esse método é um método construtor da classe Professor.*/
+	/**<br>Agora, a classe terá os seguintes Metodos:*/
+	/**<br>Esse Metodo é um Metodo construtor da classe Professor.*/
 	public void Professor(String nome, String senha, String cpf, String disciplinas, String dataNascimento, String endereco, 
 			String telefone, float salario) {
 		setNome(nome);
@@ -34,12 +34,12 @@ public class Professor {
 		setTelefone(telefone);
 		setSalario(salario);
 	}
-	/**<br>Método para retornar o nome do professor;*/
+	/**<br>Metodo para retornar o nome do professor;*/
 	public String getNome() {
 		return nome;
 	}
 	
-	/**<br>Método para definir o nome do professor;*/
+	/**<br>Metodo para definir o nome do professor;*/
 	public void setNome(String nome) {
 		if(!nome.isEmpty()) {
 			this.nome = nome;
@@ -48,12 +48,12 @@ public class Professor {
 		}
 	}
 	
-	/**<br>Método para retornar a senha do professor;*/
+	/**<br>Metodo para retornar a senha do professor;*/
 	public String getSenha() {
 		return senha;
 	}
 	
-	/**<br>Método para definir a senha do professor;*/
+	/**<br>Metodo para definir a senha do professor;*/
 	public void setSenha(String senha) {
 		/*if(senha.matches("?=^.{8,}$)(?=.*\\d)(?=.*[!@#$%^&*]+)(?![.\\n])(?=.*[A-Z])(?=.*[a-z]).*$") {
 		 * this.senha = senha;
@@ -61,7 +61,7 @@ public class Professor {
 		this.senha = senha;
 	}
 	
-	/**<br>Método para comparar a senha atual do professor;*/
+	/**<br>Metodo para comparar a senha atual do professor;*/
 	public boolean checkSenha(String senha) {
 		if(senha.equals(this.senha)) {
 			this.senha = senha;
@@ -70,35 +70,35 @@ public class Professor {
 		return false;
 	}
 	
-	/**<br>Método para retornar o CPF do professor;*/
+	/**<br>Metodo para retornar o CPF do professor;*/
 	public String getCpf() {
 		return cpf;
 	}
 	
-	/**<br>Método para definir o CPF do professor;*/
+	/**<br>Metodo para definir o CPF do professor;*/
 	public void setCpf(String cpf) {
 		if(cpf.length() == 11) {
 			this.cpf = cpf;
 		}
 	}
 	
-	/**<br>Método para retornar as disciplinas do professor;*/
+	/**<br>Metodo para retornar as disciplinas do professor;*/
 	public String getDisciplinas() {
 		return disciplinas;
 	}
 	
-	/**<br>Método para definir as disciplinas do professor;*/
+	/**<br>Metodo para definir as disciplinas do professor;*/
 	public void setDisciplinas(String disciplinas) {
 		this.disciplinas = disciplinas;
 	}
 	
-	/**<br>Método para retornar a data de nascimento do professor;*/
+	/**<br>Metodo para retornar a data de nascimento do professor;*/
 	public String getDataNascimento() {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 		return "" + sdf.format(dataNascimento.getTime());
 	}
 	
-	/**<br>Método para definir a data de nascimento do professor;*/
+	/**<br>Metodo para definir a data de nascimento do professor;*/
 	public void setDataNascimento(String dataNascimento) {
 		String array[] = new String[3];
 		
@@ -118,32 +118,32 @@ public class Professor {
 		}
 	}
 	
-	/**<br>Método para retornar o endereço do professor;*/
+	/**<br>Metodo para retornar o endereco do professor;*/
 	public String getEndereco() {
 		return endereco;
 	}
 	
-	/**<br>Método para definir o endereço do professor;*/
+	/**<br>Metodo para definir o endereco do professor;*/
 	public void setEndereco(String endereco) {
 		this.endereco = endereco;
 	}
 	
-	/**<br>Método para retornar o número de telefone do professor;*/
+	/**<br>Metodo para retornar o número de telefone do professor;*/
 	public String getTelefone() {
 		return telefone;
 	}
 	
-	/**<br>Método para definir o número de telefone do professor;*/
+	/**<br>Metodo para definir o número de telefone do professor;*/
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
 	
-	/**<br>Método para retornar o salário do professor;*/
+	/**<br>Metodo para retornar o salario do professor;*/
 	public float getSalario() {
 		return salario;
 	}
 	
-	/**<br>Método para definir o salário do professor;*/
+	/**<br>Metodo para definir o salario do professor;*/
 	public void setSalario(float salario) {
 		this.salario = salario;
 	}

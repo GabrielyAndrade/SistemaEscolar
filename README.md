@@ -1,3 +1,3 @@
 # SistemaEscolar
  
-Acesse a documentação deste projeto <a href="https://gabrielyandrade.github.io/SistemaEscolar/doc/index.html">aqui</a>
+Acesse a documentação deste projeto <a href="https://gabrielyandrade.github.io/SistemaEscolar/doc/package-summary.html">aqui</a>

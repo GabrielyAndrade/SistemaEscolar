@@ -82,7 +82,7 @@ public class Aluno {
         return ""+ sdf.format(dataNascimento.getTime());
     }
     
-    /**<br>Metodo que define/altera o Endereço do Aluno*/
+    /**<br>Metodo que define/altera o Endereco do Aluno*/
     public void setEndereco(String endereco1){
         if (endereco1.length()>0) {
             this.endereco=endereco1;
@@ -92,7 +92,7 @@ public class Aluno {
         }
     }
     
-    /**<br>Metodo que retorna o Endereço do Aluno*/
+    /**<br>Metodo que retorna o Endereco do Aluno*/
     public String getEndereco(){
         return this.endereco;
     }
@@ -112,7 +112,7 @@ public class Aluno {
         }
 	}
 	
-    /**<br>Metodo que define/altera o Nome do Responsável do Aluno*/
+    /**<br>Metodo que define/altera o Nome do Responsavel do Aluno*/
     public void setResponsavel(String responsavel1){
         if(responsavel1.length()>0) 
             this.responsavel = responsavel1;
@@ -121,17 +121,17 @@ public class Aluno {
         }
     }
     
-    /**<br>Metodo que retorna o Nome do Responsável do Aluno*/
+    /**<br>Metodo que retorna o Nome do Responsavel do Aluno*/
     public String getResponsavel(){
         return this.responsavel;
     }
     
-    /**<br>Metodo que retorna o Telefone do Responsável do Aluno*/
+    /**<br>Metodo que retorna o Telefone do Responsavel do Aluno*/
 	public String getTelefone_responsavel() {
 		return telefone_responsavel;
 	}
 	
-    /**<br>Metodo que define/altera o Telefone do Responsável do Aluno*/
+    /**<br>Metodo que define/altera o Telefone do Responsavel do Aluno*/
 	public String setTelefone_responsavel(String telefoneresponsavel) {
         if (telefoneresponsavel.length()==11) {
             this.telefone_aluno=telefoneresponsavel;

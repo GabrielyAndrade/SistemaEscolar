@@ -25,8 +25,8 @@ public class Professor {
 	private float salario;
 	
 	
-	/**<br>Agora, a classe terá os seguintes Metodos:*/
-	/**<br>Esse Metodo é um Metodo construtor da classe Professor.*/
+	/**<br>Agora, a classe tera os seguintes Metodos:*/
+	/**<br>Metodo construtor;*/
 	public void Professor(String nome, String senha, String cpf, Curso curso, String dataNascimento, String endereco, 
 			String telefone, float salario) {
 		setNome(nome);
@@ -38,6 +38,12 @@ public class Professor {
 		setTelefone(telefone);
 		setSalario(salario);
 	}
+    /**<br> Metodo Sobrecarga;*/    
+    public Professor(String nome, String Endereco, Float salario) {
+    	this.setNome(nome);
+    	this.setEndereco(endereco);
+    	this.setSalario(salario);
+    }
 	/**<br>Metodo para retornar o nome do professor;*/
 	public String getNome() {
 		return nome;

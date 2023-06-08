@@ -1,3 +1,4 @@
+package backend;
 import java.util.ArrayList;
 /**Criacao da classe Cursos onde iremos inserir os dados*/
 public class Curso {

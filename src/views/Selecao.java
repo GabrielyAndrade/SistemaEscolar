@@ -1,18 +1,17 @@
-import java.awt.BorderLayout;
+package views;
+
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JScrollPane;
 import javax.swing.JButton;
+import javax.swing.JLabel;
+import java.awt.Font;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-import java.awt.Color;
-import java.awt.GridBagLayout;
-import java.awt.GridBagConstraints;
 
-public class TelaAluno extends JFrame {
+public class Selecao extends JFrame {
 
 	private JPanel contentPane;
 
@@ -23,7 +22,7 @@ public class TelaAluno extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					TelaAluno frame = new TelaAluno();
+					Selecao frame = new Selecao();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -35,23 +34,31 @@ public class TelaAluno extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public TelaAluno() {
+	public Selecao() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		// x, y, largura, altura (pixels)
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
 		setContentPane(contentPane);
+		contentPane.setLayout(null);
 		
-		JButton btSalvar = new JButton("Salvar");
-		btSalvar.setBounds(340, 232, 89, 23);
-		btSalvar.setBackground(new Color(0, 0, 0));
-		btSalvar.setForeground(new Color(0, 0, 0));
-		btSalvar.addActionListener(new ActionListener() {
+		JButton btnEstudante = new JButton("Estudante");
+		btnEstudante.setBounds(162, 110, 100, 33);
+		contentPane.add(btnEstudante);
+		
+		JButton btnProfessor = new JButton("Professor");
+		btnProfessor.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 			}
 		});
-		contentPane.setLayout(null);
-		contentPane.add(btSalvar);
+		btnProfessor.setBounds(162, 154, 100, 33);
+		contentPane.add(btnProfessor);
+		
+		JLabel lblNewLabel = new JLabel("Selecione o tipo de conta que deseja acessar");
+		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 17));
+		lblNewLabel.setBounds(53, 35, 341, 30);
+		contentPane.add(lblNewLabel);
 	}
+
 }
